@@ -1,5 +1,3 @@
-# Medium Blog API Spec
-
 ## Running API tests locally
 
 To locally run the provided Postman collection against your backend, execute:

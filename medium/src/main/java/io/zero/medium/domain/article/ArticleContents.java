@@ -57,6 +57,8 @@ public class ArticleContents {
         updateRequest.getTitleToUpdate().ifPresent(titleToUpdate -> title = titleToUpdate);
         updateRequest.getDescriptionToUpdate().ifPresent(descriptionToUpdate -> description = descriptionToUpdate);
         updateRequest.getBodyToUpdate().ifPresent(bodyToUpdate -> body = bodyToUpdate);
+        // Note: edit tag
+//        updateRequest.
     }
 
     public void setTags(Set<Tag> tags) {

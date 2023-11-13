@@ -5,8 +5,7 @@
     "version": "1.0.0",
     "title": "Conduit API",
     "contact": {
-      "name": "RealWorld",
-      "url": "https://realworld.io"
+      "name": "Oracle Database"
     },
     "license": {
       "name": "MIT License",
