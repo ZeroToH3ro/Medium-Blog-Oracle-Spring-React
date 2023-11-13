@@ -87,7 +87,14 @@ public class Article {
         if (!user.equals(author) || !user.equals(commentsToDelete.getAuthor())) {
             throw new IllegalAccessError("Not authorized to delete comment");
         }
-        comments.remove(commentsToDelete);
+
+        try {
+            System.out.println("ID COMMENT DELETE:" + commentsToDelete.getId());
+            comments.remove(commentsToDelete);
+            System.out.println("Delete successful");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public void updateArticle(ArticleUpdateRequest updateRequest) {
@@ -140,3 +147,4 @@ public class Article {
         return Objects.hash(author, contents.getTitle());
     }
 }
+
